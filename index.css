@@ -42,6 +42,9 @@ a {
     padding-top: 15px;
     display: none;
 }
+.login .container-fluid .login-img img{
+    max-width: 100%;
+}
 .login .container-fluid .form-div {
     display: flex;
     flex-basis: 100%;
@@ -53,6 +56,7 @@ a {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    padding: 40px 4rem;
 }
 .login .container-fluid .form-div h2 {
     color: #5e5873;
@@ -63,12 +67,19 @@ a {
     color: #6e6b7b;
 }
 .login .container-fluid .form-div .form-info {
+    position: relative;
     color: #7367f0;
     background: rgba(115, 103, 240, 0.12);
     padding: 5px;
-    padding: 0.71rem 1rem;
+    padding: 0 1rem;
     font-size: 0.8rem;
     border-radius: 0.357rem;
+}
+.login .container-fluid .form-div .form-info .fa-circle-question {  
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 16px;
 }
 .login .container-fluid .form-div form {
     display: flex;
@@ -213,31 +224,23 @@ label {
         justify-content: center;
         flex: 1;
     }
-    .login .container-fluid .form-div {  
-        padding: auto;
-      }
 }
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
     }
-    .login .container-fluid .form-div {  
-        padding: 40px 4rem;
-      }
 }
 @media (min-width: 1400px) {
     .container {
         max-width: 1320px;
     }
 }
-/* You can add global styles to this file, and also import other style files */
-
-/* body {
-    font-family: "open sans", sans-serif;
-    background-color: #e5e5e5;
- padding: 0;
-    margin: auto 0;
-  } */
+@media (max-width: 991.98px) {
+    .login .container-fluid .form-div{
+        padding-left:10px ;
+        padding-right:10px;
+    }
+}
 .container {
     max-width: 540px;
     margin: auto;
